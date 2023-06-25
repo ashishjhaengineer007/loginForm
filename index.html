@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height:100%;
+  margin: 0;
+  width:100%;
+  font-family: Arial, Helvetica, sans-serif;
+  color:#01403a;
+  background-image:url('images/bg.webp');
+  background-size:cover;
+}
+* {
+  box-sizing: border-box;
+  
+  font-size: 3vw;
+
+}
+.container {
+  padding: 15px;
+  /*background-image:url('images/bg.jpg');*/
+  color:white;
+   
+}
+.loginform 
+{
+border: 5px solid #f1f1f1;
+width:100%;
+position: absolute;
+ top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #01403a;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.avatar {
+  max-width: 100%;
+  border-radius: 5%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+ 
+}
+</style>
+</head>
+<body >
+
+  <div class="container">
+  	<center><h2 style="font-size:6vw">Login Form</h2></center>
+  <div class="loginform">
+  <form action="/login.php" method="post">
+  
+    <img src="images/logo.png" alt="Avatar" class="avatar"> 
+    	<center><label for="uname"><b>Card Number</b></label>	</center>
+    <input type="text" placeholder="Enter Card Number" name="uname" required>
+    <button type="submit">Login</button>  
+	</form>
+	</div>
+  </div> 
+
+</body>
+</html>
